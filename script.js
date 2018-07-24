@@ -6,5 +6,5 @@ setInterval(function(){
 }, 1000)
 
 setTimeout(() => {
-    console.log('Current time: ' + new Date())
+    console.log('WILL EXECUTE ONLY ONCE: ' + new Date())
 }, 2000);

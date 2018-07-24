@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VS Code Debuggin</title>
+    <script src="node_modules/knockout/build/output/knockout-latest.debug.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+    <h3>VS Code Debuggin</h3>
+
+    <span>tag:debuggers @sort:installs</span>
+    <br>
+    <input type="text" data-bind="value: fname">
+    <span data-bind="text: fname"></span><br>
+    <input type="text" data-bind="value: lname">
+    <span data-bind="text: lname"></span><br>
+    <input type="text" data-bind="value: phone">
+    <span data-bind="text: phone"></span>
+
+    <span>Select a flight</span>
+    <select name="" id="" data-bind="foreach: flights">
+        <option data-bind=" value: from"></option>
+    </select>
+
+    <!-- <ul data-bind="foreach: people.people">
+        <li data-bind="text: name"></li>
+    </ul> -->
+    
+    <script src="script.js"></script>
+    <script src="koscript.js"></script>
+    <script src="jqscript.js"></script>
+</body>
+</html>
