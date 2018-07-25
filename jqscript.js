@@ -1,5 +1,5 @@
 alert('webpack')
-define([], function(){
+define(['./hello-world', 'jquery'], function(helloWorldComponent, $){
 
     $(function(){
 
