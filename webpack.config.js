@@ -27,7 +27,26 @@ module.exports = {
       new NamedModulesPlugin(),
       new HotModuleReplacementPlugin(),
       new HtmlWebpackPlugin()
-    ]
+    ],
+    module: {
+        rules: [
+          { test: /\.css$/, use: 'css-loader' },
+          { test: /\.ts$/, use: 'ts-loader' },
+          {
+            test: /\.js$/,
+             loader: 'babel-loader',
+             exclude: /(node_modules)/,
+             query: {
+                 presets: ['es2015']
+             }
+        }
+        ]
+      },
+    stats: {
+        colors: true
+    },
+    devtool: 'source-map'
+
 };
 
 // AngularJS + Webpack = lazyLoad https://medium.com/@var_bin/angularjs-webpack-lazyload-bb7977f390dd
