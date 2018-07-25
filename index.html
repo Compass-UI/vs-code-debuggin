@@ -13,19 +13,29 @@
 
     <input type="text" data-bind="value: fname">
     <span data-bind="text: fname"></span>
+    <ul data-bind="foreach: flights">
+        <li data-bind="text: origin"></li>
+        <li data-bind="text: destination"></li>
+        <li data-bind="text: fnumber"></li>
+    </ul>
 
 
 <script>
     var vm = {
         fname: ko.observable('David'),
         lname: ko.observable('Shams'),
-        phone: ko.observable(4163334444)
+        phone: ko.observable(4163334444),
+        flights: ko.observableArray([
+            {origin: 'ORD', destination: 'SFO', fnumber: 47},
+            {origin: 'WAS', destination: 'YYZ', fnumber: 97},
+            {origin: 'DXB', destination: 'YYZ', fnumber: 108}
+        ])
     }
     ko.applyBindings(vm)
 
 </script>
 
 
-    <script src="./dist/bundle.js"></script>
+    <script src="./dist/main.bundle.js"></script>
 </body>
 </html>
