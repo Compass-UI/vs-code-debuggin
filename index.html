@@ -19,6 +19,14 @@
         <li data-bind="text: fnumber"></li>
     </ul>
 
+    <ul data-bind="foreach: flights">
+            <!-- <li data-bind="text: $data"></li> -->
+            <li data-bind="text: $data.origin"></li>
+            <!-- <li data-bind="text: destination"></li> -->
+            <!-- <li data-bind="text: fnumber"></li> -->
+        </ul>
+    <button>Change flight</button>
+
 
 <script>
     var vm = {
@@ -31,8 +39,8 @@
             {origin: 'DXB', destination: 'YYZ', fnumber: 108}
         ])
     }
-    ko.applyBindings(vm)
-
+    ko.applyBindings(vm);
+    console.log(vm.observable().lenght)
 </script>
 
 

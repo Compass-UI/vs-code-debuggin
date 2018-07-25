@@ -36,5 +36,11 @@ define(['jquery', 'knockout', './hello-world'], function($, ko, helloWorldCompon
         }
         ko.applyBindings(vm)
         // ko.applyBindings(viewModel);
+
+        $('button').click(function(){
+            alert('click')
+        })
+        // var handleClick = function(){
+        //     document.querySelectorAll('button')
     })
 })
