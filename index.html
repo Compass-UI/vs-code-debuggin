@@ -13,11 +13,12 @@
 
     <input type="text" data-bind="value: fname">
     <span data-bind="text: fname"></span>
-    <ul data-bind="foreach: flights">
-        <li data-bind="text: origin"></li>
-        <li data-bind="text: destination"></li>
-        <li data-bind="text: fnumber"></li>
-    </ul>
+    <!-- <ul data-bind="foreach: flights"> -->
+                    <!-- Uncaught ReferenceError: Unable to process binding "foreach: function(){return flights }" -->
+        <!-- <li data-bind="text: origin"></li> -->
+        <!-- <li data-bind="text: destination"></li> -->
+        <!-- <li data-bind="text: fnumber"></li> -->
+    <!-- </ul> -->
 
     <ul data-bind="foreach: flights">
             <!-- <li data-bind="text: $data"></li> -->
