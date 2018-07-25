@@ -3,7 +3,7 @@ define([], function(){
 
     $(function(){
 
-        import * as helloWorldComponent from './koscript.js'
+        // import * as helloWorldComponent from './koscript.js'
         document.body.appendChild(document.createElement('hello-world'))
         ko.components.register('hello-world', helloWorldComponent)
         // ko.applyBindings()
