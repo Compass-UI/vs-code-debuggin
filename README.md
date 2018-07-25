@@ -17,3 +17,11 @@
 `npm install babel-preset-env --save-dev`
 
 `          "browsers": ["last 2 versions", "safari >= 7"]`
+
+## Production build with Webpack
+
+`webpack --help`
+`webpack -p`
+
+### Webpack code splitting
+[https://webpack.js.org/guides/code-splitting/](https://webpack.js.org/guides/code-splitting/)
