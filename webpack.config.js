@@ -16,8 +16,11 @@ module.exports = {
 
   entry: './index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    // path: path.resolve(__dirname, 'dist'),
+    // filename: 'bundle.js'
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
+
   },
   devServer: {
     // mode: 'developmeent',

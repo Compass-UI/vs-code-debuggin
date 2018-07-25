@@ -1,12 +1,9 @@
-alert('webpack')
-define(['./hello-world', 'jquery'], function(helloWorldComponent, $){
+define(['jquery', 'knockout', './hello-world'], function($, ko, helloWorldComponent){
 
     $(function(){
 
-        // import * as helloWorldComponent from './koscript.js'
         document.body.appendChild(document.createElement('hello-world'))
         ko.components.register('hello-world', helloWorldComponent)
-        // ko.applyBindings()
     
     
         var Person = function(name){
