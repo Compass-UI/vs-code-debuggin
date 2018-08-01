@@ -1,0 +1,31 @@
+[ERR!] cwd  : /Users/david1/Compass/vs-chrome-debugging
+[ERR!] os   : Darwin 14.5.0
+[ERR!] argv : "/Users/david1/.nvm/versions/node/v8.11.3/bin/node" "/usr/local/bin/tsd" "--help"
+[ERR!] node : v8.11.3
+[ERR!] tsd  : 0.6.5
+[ERR!] Error: Cannot find module 'internal/util/types'
+[ERR!] CODE : MODULE_NOT_FOUND
+[ERR!] Cannot find module 'internal/util/types'
+[ERR!] If you need help, you may report this error at:
+    https://github.com/DefinitelyTyped/tsd/issues
+
+[ERR!] 
+Error: Cannot find module 'internal/util/types'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evalmachine.<anonymous>:31:26
+    at Object.<anonymous> (/usr/local/lib/node_modules/tsd/node_modules/update-notifier/node_modules/configstore/node_modules/graceful-fs/fs.js:11:1)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+
+[ERR!] tsd.json could not be retrieved
+
+[ERR!] .tsdrc could not be retrieved
+
+[ERR!] Please include the following file with any support request:
+    /Users/david1/Compass/vs-chrome-debugging/tsd-debug.log
+
