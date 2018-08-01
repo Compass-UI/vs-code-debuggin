@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>State Maintain Knockout Hot Reload</title>
     <script src="./node_modules/knockout/build/output/knockout-latest.debug.js"></script>
+    <script src="./node_modules/angular/angular.js"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     
@@ -45,6 +47,17 @@
 </script>
 
 
+
+
+    <div ng-app="myApp">
+        <div>
+          {{ 'World' | greet }}
+        </div>
+    </div>
+      
+
+
+    <script src="shopping-module.js"></script>
     <script src="./dist/main.bundle.js"></script>
 </body>
 </html>
